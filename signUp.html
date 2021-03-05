@@ -1,0 +1,43 @@
+<html>
+    <head> 
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="public/images/mbr-1-90x90.png" type="image/x-icon">
+      <title>chatMail</title>
+      <link rel="stylesheet" type="text/css" href="/static/style.css">
+      <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <a href="/login"><h2 class="inactive underlineHover"> Sign In </h2></a>
+          <a href="/signUp"><h2 class="active">Sign Up </h2></a>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="https://img.icons8.com/nolan/64/user-male-circle.png" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form action="/register" method="POST">
+			<input type="text" id="login" class="fadeIn second" name="name" placeholder="Name">
+            <input type="text" id="login" class="fadeIn second" name="emailID" placeholder="Email ID">
+            <input type="text" id="login" class="fadeIn second" name="mnumber" placeholder="Eg.- 911234567890">
+            <select name="gender" id="login" class="fadeIn second" placeholder="Male">
+				<option value="male" class="fadeIn second">Male</option>
+				<option value="female" class="fadeIn second">Female</option>
+				<option value="other" class="fadeIn second">Other</option>
+			</select>
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+			<input type="password" id="password" class="fadeIn third" name="cpassword" placeholder="Confirm Password">
+            <input type="submit" class="fadeIn fourth" value="Sign Up">
+          </form>
+      <!--a href="/signUpOtp"> Hey </a-->
+          <!-- Remind Passowrd -->
+          <!--div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div-->
+        </div>
+      </div> 
+    </body>
+</html>
